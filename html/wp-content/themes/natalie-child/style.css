@@ -1,0 +1,15 @@
+/*
+Theme Name: Natalie Child
+Theme URI: www.az-theme.net/natalie
+Description: A Responsive WordPress Blog Theme
+Author URI: http://az-theme.net
+Author: AZ-Theme
+Version: 1.0.0
+Template: natalie
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Last change: 11-01-2016
+Text Domain: natalie
+Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, sticky-post, threaded-comments
+*/
+@import url("../natalie/style.css");

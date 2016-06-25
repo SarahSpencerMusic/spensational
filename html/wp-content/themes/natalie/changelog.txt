@@ -1,0 +1,4 @@
+*** Version 1.1 ***
+- Sticky Menu.
+- More Customizer Options.
+- Minor code and css fixes.

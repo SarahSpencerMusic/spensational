@@ -1,0 +1,266 @@
+/* ----------------------------------------------------------------
+
+	Name: Scripted Responsive Media Queries
+	Version: 1.0
+	
+-----------------------------------------------------------------*/
+
+/*-------------------------------------
+   0. RESPONSIVE MEDIA QUERIES
+-------------------------------------*/
+
+@media only screen and (min-width: 1000px) {
+
+	.slicknav_menu {
+		display: none;
+		}
+
+}
+
+
+@media only screen and (max-width: 999px) {
+
+	.slicknav_menu {
+		background: #f2f2f1;
+		display: block;
+		position: fixed;
+		top: 0;
+		width: 99%;
+		z-index: 3000;
+		box-shadow: inset 0 -4px 4px -4px rgba(0,0,0,.1);
+	}
+
+	.slicknav_btn {
+		line-height: 0;
+	}
+
+	a.slicknav_btn {
+		background-color: #FFF;
+		border-bottom: none;
+		box-shadow: 0 4px 4px -4px rgba(0,0,0,.1);
+	}
+
+	a.slicknav_btn:hover {
+		background-color: #000;
+		border-bottom: none;
+	}
+
+	a.slicknav_btn:hover .slicknav_menutxt {
+		color: #FFF;
+	}
+
+	.slicknav_menu .slicknav_icon {
+		margin: 0;
+	}
+
+	.slicknav_menu .slicknav_icon-bar {
+		background-color: #333;
+	}
+
+	a.slicknav_btn:hover .slicknav_icon .slicknav_icon-bar {
+		background-color: #FFF;
+	}
+
+	.slicknav_menu .slicknav_menutxt {
+		font-size: 14px;
+		line-height: 15px;
+		color: #000;
+		font-weight: 600;
+	}
+
+	.slicknav_nav li {
+		text-align: left;
+	}
+
+	.slicknav_nav a {
+		color: #000;
+		border-bottom: none;
+	}
+
+	.slicknav_nav a:hover,
+	.slicknav_nav .slicknav_item:hover {
+		border-radius: 4px;
+		background: #FFF;
+		color: #000;
+	}
+
+	.slicknav_nav .slicknav_arrow {
+		font-size: 0.8em;
+		margin: 0 0 0 0.4em;
+		color: #ec3853;
+	}
+
+	body {
+		padding-top: 227px;
+	}
+
+	.wrap {
+		width: 93%;
+		margin: 0 auto;
+	}
+
+	#header {
+		top: 47px;
+	}
+
+	#header nav {
+		display: none;
+	}
+
+	#toggle,
+	#sidebar {
+		display: none;
+	}
+
+	body.page-template-template-homepage-php #columns .column,
+    body.page-template-template-sidebar-php #columns .column  {
+		width: 30%;
+		margin-right: 5%;
+	}
+
+	body.page-template-template-homepage-php #columns .last,
+    body.page-template-template-sidebar-php #columns .last {
+		margin-right: 0;
+	}
+
+	body.page-template-template-homepage-php #blog .blog-post,
+    body.page-template-template-sidebar-php #blog .blog-post,
+    body.post-type-archive-product #blog .blog-post {
+		width: 55%;
+	}
+    
+    body.post-type-archive-product #blog .blog-post {
+		width: 100%;
+	}
+
+	body.page-template-template-homepage-php #blog .blog-posts,
+    body.page-template-template-sidebar-php #blog .blog-posts,
+    body.post-type-archive-product #blog .blog-posts {
+		width: 40%;
+		margin-left: 5%;
+	}
+    
+    body.page-template-template-sidebar-php #blog .blog-posts,
+    body.post-type-archive-product #blog .blog-posts {
+        float:left;
+		width: 40%;
+		margin-left: 5%;
+	}
+
+	.portfolio-container .post {
+		width: 43.5%;
+		margin-right: 6%;
+	}
+
+	.aligncenter {
+		width: 100%;
+		height: auto;
+	}
+
+	#footer {
+		text-align: center;
+	}
+
+	#footer .copyright,
+	#footer ul {
+		float: none;
+		display: block;
+	}
+
+	#footer ul {
+		margin-bottom: 10px;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 640px) {
+    
+	body.page-template-template-homepage-php #columns .column {
+	   float: none;
+		width: 100%;
+		margin-right: 0%;
+		margin-bottom: 75px;
+	}
+
+	body.page-template-template-homepage-php #columns .last,
+    body.page-template-template-sidebar-php #columns .last {
+		margin-bottom: 0;
+	}
+
+	body.page-template-template-homepage-php #blog .blog-post,
+    body.page-template-template-sidebar-php #blog .blog-post,
+    body.post-type-archive-product #blog .blog-post
+     {
+		float: none;
+		width: 100%; 
+		margin-bottom: 75px;
+	}
+
+	body.page-template-template-homepage-php #blog .blog-posts,
+    body.page-template-template-sidebar-php #blog .blog-posts,
+    body.post-type-archive-product #blog .blog-posts {
+		float: none;
+		width: 100%;
+		margin-left: 0;
+	}
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+	.portfolio-container .post {
+		width: 93.5%;
+		margin-right: 0%;
+	}
+
+	body.page-template-template-contact-php #contact-form li,
+	#respond .comment-form-author,
+	#respond .comment-form-email,
+	#respond .comment-form-url,
+	#respond .logged-in-as,
+	#respond .must_log_in {
+		width: 100% !important;
+		display: block;
+		float: none;
+	}
+
+	body.page-template-template-contact-php #contact-form .contact-message,
+	body.page-template-template-contact-php #contact-form .contact-submit,
+	#respond .comment-form-comment,
+	#respond .form-submit {
+		position: static;
+		width: 100%;
+	}
+
+	#comments ol #respond {
+		margin: 50px 0 80px 0px !important;
+	}
+
+	.aligncenter,
+	.alignleft,
+	.alignright {
+		width: 100% !important;
+		height: auto;
+		margin: 0;
+		float: none;
+	}
+	.wp-caption img {
+		width: 100%;
+		height: auto;
+	}
+
+	#article-nav .nav-next,
+	#article-nav .nav-previous {
+		width: 80%;
+		float: none;
+		padding-right: 20%;
+	}
+
+	#article-nav .nav-previous {
+		margin-bottom: 50px;
+	}
+
+}
